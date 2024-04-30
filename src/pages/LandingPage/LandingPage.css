@@ -1,5 +1,5 @@
 .crypt-land-application{
-
+    background-color: #F8F8F8;
 }
 
 .intro-section{
@@ -121,7 +121,6 @@
     font-weight: 700;
     line-height: 72px;
     text-align: center;
-
 }
 
 .partners-dividers{
@@ -145,7 +144,6 @@
 
 .business-services-section{
     padding: 160px 120px;
-    background-color: #F8F8F8;
 }
 
 .business-services-title{
@@ -197,5 +195,77 @@
     border-radius: 100px
 }
 
+.founders-section{
+    height: 150vh;
+    background-color: #000000
+}
+
+.founders-details-title{
+    padding-top: 100px;
+    color:#FFFFFF;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: center;
+}
+
+.founders-details-text{
+    padding-top: 25px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.founders-images{
+    padding: 60px 120px;
+    display: flex;
+    gap: 30px;
+}
+
+.founder-image{
+    height: 600px;
+    width: 460px
+}
+
+.founder-name{
+    padding-top: 40px;
+    color:#ECECEC;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.31px;
+}
+
+.founder-designation{
+    color:#65676C;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+}
+
+.plans-section{
+    padding: 120px 330px;
+
+}
+
+.plan-details-title{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 87.14px;
+    letter-spacing: -0.025em;
+    text-align: center;
+    color: #070707;
+}
+
+.plan-details-text{
+    padding-top: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: #070707;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');

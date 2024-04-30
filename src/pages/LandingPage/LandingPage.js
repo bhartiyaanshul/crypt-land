@@ -10,6 +10,9 @@ import partner5 from './Partnerslogo/Component 55.png'
 import partner6 from './Partnerslogo/Component 57.png'
 import service1 from './analize/right side.png'
 import service2 from './analize/image.png'
+import founder1 from './Founders Image/Rectangle 403.png'
+import founder2 from './Founders Image/Rectangle 404.png'
+import founder3 from './Founders Image/Rectangle 405.png'
 
 
 export const LandingPage = () => {
@@ -94,6 +97,45 @@ export const LandingPage = () => {
                         <img src={service2} alt='' />
                     </div>
                 </div>
+            </div>
+            <div className='founders-section'>
+                <div className='founders-section-details'>
+                    <div className='founders-details-title'>
+                        Modern Companies are<br/>
+                        built on Capital.
+                    </div>
+                    <div className='founders-details-text'>
+                        we provide software for the financial and operational needs of today`s <br/>
+                        founders so they can get back to doing what they do best-building
+                    </div>
+                </div>
+                <div className='founders-images'>
+                    <div>
+                        <img className='founder-image' src={founder1} alt='' />
+                        <div className='founder-name'>Benjamin McDonald</div>
+                        <div className='founder-designation'>Founder, CEO</div>
+                    </div>
+                    <div>
+                        <img className='founder-image' src={founder2} alt='' />
+                        <div className='founder-name'>Jett Yagan</div>
+                        <div className='founder-designation'>Founder, CEO</div>
+                    </div>
+                    <div>
+                        <img className='founder-image' src={founder3} alt='' />
+                        <div className='founder-name'>Layla Cramp</div>
+                        <div className='founder-designation'>Founder, CEO</div>
+                    </div>
+                </div>
+            </div>
+            <div className='plans-section'>
+                <div className='plan-section-details'>
+                    <div className='plan-details-title'>Find the right plan</div>
+                    <div className='plan-details-text'>
+                        "Invest in your company's future with our comprehensive financial solution. Contact us for pricing details <br/>
+                        and see how we can help you streamline your finances and reach your business goals.
+                    </div>
+                </div>
+                <div></div>
             </div>
         </div>
     )
