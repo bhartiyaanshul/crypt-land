@@ -1,0 +1,201 @@
+.crypt-land-application{
+
+}
+
+.intro-section{
+    height: 85vh;
+    padding-top: 170px;
+    background-color: #003FDB;
+    align-items: center;
+}
+
+.navbar{
+    width: calc(100% - 240px);
+    height: 110px;
+    padding: 10px 120px 0px 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: left;
+    background-color: #003FDB;
+    color: #FFFFFF;
+}
+
+.navbar-section{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-wrap: nowrap;
+}
+.navbar-logo{
+    margin: 0px 120px 0px 120px;
+    display: flex;
+    gap: 20px;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.navbar-logo > img {
+    width: 50px;
+    height: 50px;
+}
+
+.signup-button{
+    padding: 18px 50px;
+    border-radius: 100px;
+    background-color: #A3DC2F;
+    color: #000000;
+    font-size: 20px;
+}
+
+.intro-details-title{
+    width:100%;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.intro-details-subtext{
+    padding: 10px 420px 0px 420px;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.book-demo{
+    width: 640px;
+    height: 72px;
+    top: 664px;
+    left: 640px;
+    gap: 0px;
+    border-radius: 100px;
+    opacity: 0px;
+    background-color: #FFFFFF;
+    margin: 50px 520px 0px 520px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: space-between;
+}
+
+.book-demo-button{
+    padding: 20px 30px;
+    border-radius: 100px;
+    background-color: #A3DC2F;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.dashboard-img{
+    padding: 40px 155px;
+    width: 1370px;
+    height: 700px;
+    top: 805px;
+    left: 192px;
+    gap: 0px;
+    border-radius: 20px 0px 0px 0px;
+    border: 15px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.intro-details-buttom-text{
+    padding-top: 180px;
+    font-family: Inter;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+
+}
+
+.partners-dividers{
+    padding: 0px 70px 0px 70px;
+    height: 200px;
+    display: flex;
+    gap: 60px;
+    background-color: #000000;
+    margin-top: 850px;
+    align-items: center;
+}
+
+.partners-img{
+    width: 220px;
+    height: 44px;
+    top: 2040px;
+    left: 91px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.business-services-section{
+    padding: 160px 120px;
+    background-color: #F8F8F8;
+}
+
+.business-services-title{
+    font-family: Inter;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: center;
+}
+
+.business-service{
+    display: flex;
+    gap: 150px;
+    padding-top: 190px;
+}
+
+.business-service-images{
+    display: flex;
+}
+
+.business-service-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.business-details-title{
+    padding-top: 65px;
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+}
+
+.business-details-text{
+    padding-top: 25px;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+
+.explore-more-button{
+    width: 100px;
+    margin-top: 35px;
+    padding: 20px 40px;
+    background-color: #A3DC2F;
+    border-radius: 100px
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
