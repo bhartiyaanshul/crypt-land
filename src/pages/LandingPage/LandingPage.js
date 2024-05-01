@@ -1,6 +1,7 @@
 import React from 'react'
 import './LandingPage.css'
 import logo from './logo.png'
+import { useState } from 'react'
 import dashboard from './dashboard.png'
 import partner1 from './Partnerslogo/Component 59.png'
 import partner2 from './Partnerslogo/Component 61.png'
@@ -13,9 +14,80 @@ import service2 from './analize/image.png'
 import founder1 from './Founders Image/Rectangle 403.png'
 import founder2 from './Founders Image/Rectangle 404.png'
 import founder3 from './Founders Image/Rectangle 405.png'
-
+import bookdemo from './bookdemo/bookdemo.png'
+import socialicon from './footer/social iocn.png'
+import rating from './feedback/Component 29.png'
+import avatar from './feedback/Pic.png'
 
 export const LandingPage = () => {
+
+    const [plans, setPlans] = useState([
+        {
+            type: 'Basic',
+            price: 0,
+            description: 'Get a professional website designed according to your needs.',
+            features: [
+                'Get a fully designed Website.',
+                'Webflow Development',
+                'Limited Support'
+            ]
+        },
+        {
+            type: 'Pro',
+            price: 499,
+            description: 'Get a professional website designed according to your needs.',
+            features: [
+                'Get a fully designed Website.',
+                'Webflow Development',
+                'Limited Support',
+                'Get a fully designed Website',
+                'Webflow Development',
+                '24/7 Support system'
+            ]
+        },
+        {
+            type: 'Enterprise',
+            price: 999,
+            description: 'Get a professional website designed according to your needs.',
+            features: [
+                'Get a fully designed Website.',
+                'Webflow Development',
+                'Limited Support',
+                'Get a fully designed Website',
+                'Get a fully designed Website',
+                'Webflow Development',
+                '24/7 Support system'
+            ]
+        }
+    ])
+
+    const [ feedback, setFeedback ] = useState([
+        {
+            messege:"Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable.",
+            name: 'Ashley Cooper',
+        },
+        {
+            messege:"Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. ",
+            name: 'Ashley Cooper',
+        },
+        {
+            messege:"Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable.",
+            name: 'Ashley Cooper',
+        },
+        {
+            messege:"Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used",
+            name: 'Ashley Cooper',
+        },
+        {
+            messege:"Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable.Teamollo delivered the site with inthe timeline as they requested. Inthe end ",
+            name: 'Ashley Cooper',
+        },
+        {
+            messege:"Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable.",
+            name: 'Ashley Cooper',
+        },
+    ])
+
     return (
         <div className='crypt-land-application'>
             <div className='navbar'>
@@ -46,7 +118,7 @@ export const LandingPage = () => {
                         management of small and medium-sized business.
                     </div>
                     <div className='book-demo'>
-                        Enter your email adress
+                        <input type='text' placeholder='Enter your email adress'></input>
                         <div className='book-demo-button'>Book a Demo</div>
                     </div>
                     <img className='dashboard-img' src={dashboard} alt='' />
@@ -135,7 +207,123 @@ export const LandingPage = () => {
                         and see how we can help you streamline your finances and reach your business goals.
                     </div>
                 </div>
-                <div></div>
+                <div className='plans-data'>
+                    {
+                        plans.map((value,index)=>{
+                            return <div key={index} className='plan-card'>
+                                <div className='plan-details'>
+                                    <div className='plan-type'>{value.type}</div>
+                                    <div className='plan-price'>${value.price}</div>
+                                    <div className='plan-description'>{value.description}</div>
+                                    {value.features.map((e)=>
+                                        <p className='plan-feature'>{e}</p>
+                                    )}
+                                </div>
+                                <button className='select-plan-button'>Select Plan</button>
+                            </div>
+                        })
+                    }
+                </div>
+            </div>
+            <div className='customer-feedback-section'>
+                <div className='customer-feedback-header'>
+                    <div className='customer-header-title'>What our customers say</div>
+                    <div className='customer-header-subtext'>
+                        "Thank you for your trust in Crypt Land! 
+                        We are grateful for your feedback and are committed to providing the<br/>best [products/services offered]. 
+                        Read what our clients have to say about their experience with us.
+                    </div>
+                </div>
+                <div className='feedback-data'>
+                    {
+                        feedback.map((feedback,index)=>{
+                            return <div key={index} className='feedback-card'>
+                                <div className='feedback-details'>
+                                    <div className='feedback-message'>{feedback.messege}</div>
+                                    <div className='customer-info'>
+                                        <img src={avatar} alt=''></img>
+                                        <div>
+                                            <div className='feedback-name'>{feedback.name}</div>
+                                            <img src={rating} alt=''></img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        })
+                    }
+                </div>
+            </div>
+            <div className='request-demo-section'>
+                <div className='book-demo-section'>
+                    <div className='book-demo-details'>
+                        <div className='demo-details-title'>Let`s Upgrade your finances experience by using Cryptland</div>
+                        <div className='demo-buttons-section'>
+                            <div className='request-demo-button'>Request Demo</div>
+                            <div className='watch-video-button'>Watch Video</div>
+                        </div>
+                    </div>
+                    <img className='book-demo-image' src={bookdemo} alt='' />
+                </div>
+            </div>
+            <div className='footer'>
+                <div className='footer-details'>
+                    <div className='footer-company-info'>
+                        <div className='footer-logo'>
+                            <img src={logo} alt='' />
+                            <div className='footer-logo-text'>Crypt Land</div>
+                        </div>
+                        <div className='conpany-info-text'>Empower your finance team. 
+                            The onestop plateform for all financial management 
+                            of small and medium- sized business.</div>
+                        <img className='social-icon' src={socialicon} alt='' />
+                    </div>
+                    <div className='footer-company-provides'>
+                        <div className='company-platform'>
+                            <div className='company-provides-title'>Plateform</div>
+                            <div className='company-provides-services'>
+                                <div >Why Cloudwise</div>
+                                <div >Expense management</div>
+                                <div >Automatic bookkeeping</div>
+                                <div >Integeration</div>
+                            </div>
+                        </div>
+                        <div className='company-company-details'>
+                            <div className='company-provides-title'>Company</div>
+                            <div className='company-provides-services'>
+                                <div >About us</div>
+                                <div >Plateform</div>
+                                <div >Solution</div>
+                                <div >Customer</div>
+                                <div >Pricing</div>
+                            </div>
+                        </div>
+                        <div className='company-resources'>
+                            <div className='company-provides-title'>Resources</div>
+                            <div className='company-provides-services'>
+                                <div >Blog</div>
+                                <div >Help center</div>
+                                <div >Webinar</div>
+                                <div >FAQ`s</div>
+                                <div >Status</div>
+                            </div>
+                        </div>
+                        <div className='company-solutions'>
+                            <div className='company-provides-title'>Solutions</div>
+                            <div className='company-provides-services'>
+                                <div >Self Employeed</div>
+                                <div >Email Business</div>
+                                <div >Sms & Startups</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='footer-bottom'>
+                    <div className='footer-line'></div>
+                    <div className='footer-bottom-text'>
+                        <div>© 2023 Crypt Land. All rights reserved</div>    |    
+                        <div> Cookie Settings, Anti-Spam, Privacy, User agreement, Legal Notice and Responsible Disclosure</div>
+                    </div>
+                </div>
             </div>
         </div>
     )
