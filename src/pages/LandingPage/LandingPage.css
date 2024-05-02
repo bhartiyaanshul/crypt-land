@@ -271,7 +271,7 @@
 }
 
 .founders-images{
-    padding: 80px 220px;
+    padding: 80px 0px 80px 220px;
     display: flex;
     gap: 30px;
 }
