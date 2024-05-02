@@ -220,14 +220,14 @@ export const LandingPage = () => {
                         plans.map((value, index) => {
                             return <div key={index} className='plan-card'>
                                 <div className='plan-details'>
-                                    <div className='plan-type'>{value.type}</div>
+                                    <div style={{ color: index===0 ? "black" : "#A3DC2F" }}className='plan-type'>{value.type}</div>
                                     <div className='plan-price'>${value.price}</div>
                                     <div className='plan-description'>{value.description}</div>
                                     {value.features.map((e) =>
                                         <p className='plan-feature'>{e}</p>
                                     )}
                                 </div>
-                                <button className='select-plan-button'>Select Plan</button>
+                                <button style={{ background: index===2 ? "#A3DC2F" : "white" }} className='select-plan-button'>Select Plan</button>
                             </div>
                         })
                     }
