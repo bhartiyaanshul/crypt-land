@@ -4,48 +4,8 @@
 }
 
 .intro-section{
-    padding-top: 170px;
     background-color: #003FDB;
     align-items: center;
-}
-
-
-.navbar{
-    width: calc(100% - 240px);
-    height: 110px;
-    padding: 10px 120px 0px 120px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.78px;
-    text-align: left;
-    background-color: #003FDB;
-    color: #FFFFFF;
-}
-
-.navbar-section{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    /* text-wrap: nowrap; */
-}
-.navbar-logo{
-    /* margin: 0px 120px 0px 120px; */
-    display: flex;
-    gap: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 30px;
-    justify-content: center;
-    align-items: center;
-    text-wrap: nowrap;
-}
-
-.navbar-logo > img {
-    width: 50px;
-    height: 50px;
 }
 
 .signup-button{
@@ -64,6 +24,7 @@
 }
 
 .intro-details-title{
+    padding-top: 170px;
     width:100%;
     font-size: 90px;
     font-weight: 700;
@@ -84,7 +45,7 @@
 
 .book-demo{
     margin-top: 50px;
-    width: 640px;
+    width: 600px;
     height: 72px;
     border-radius: 100px;
     background-color: #FFFFFF;
@@ -126,14 +87,13 @@
     background-color: #003FDB;
     z-index: 0;
     position: absolute;
-
 }
 
 .dashboard-img{
     padding: 40px 40px;
     z-index: 1;
     width: 1370px;
-    height: 700px;
+    height: 680px;
 }
 
 .intro-details-buttom-text{
@@ -145,7 +105,7 @@
 }
 
 .partners-dividers{
-    height: 200px;
+    height: 180px;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -186,108 +146,12 @@
     left: 91px;
 }
 
-.business-services-section{
-    padding: 160px 120px;
-}
-
-.business-services-title{
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 90px;
-    text-align: center;
-}
-
-.business-service{
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-    padding-top: 190px;
-}
-
-.business-service-images{
-    display: flex;
-}
-
-.business-service-details{
-    display: flex;
-    flex-direction: column;
-}
-
-.business-details-title{
-    padding-top: 65px;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 72px;
-    text-align: left;
-}
-
-.business-details-text{
-    padding-top: 25px;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-}
-
 .explore-more-button{
     width: 100px;
     margin-top: 35px;
     padding: 20px 40px;
     background-color: #A3DC2F;
     border-radius: 100px
-}
-
-.founders-section{
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.founders-details-title{
-    padding-top: 100px;
-    color:#FFFFFF;
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 90px;
-    text-align: center;
-}
-
-.founders-details-text{
-    padding-top: 25px;
-    color: #FFFFFF;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: center;
-}
-
-.founders-images{
-    padding: 80px 0px 80px 0px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.founder-image{
-    height: 600px;
-    width: 460px
-}
-
-.founder-name{
-    padding-top: 40px;
-    color:#ECECEC;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 36.31px;
-}
-
-.founder-designation{
-    color:#65676C;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.025em;
 }
 
 .plans-section{
@@ -387,10 +251,13 @@
     padding-top: 55px;
     display: grid;
     grid-template-columns: auto auto auto;
+
+    grid-auto-flow: dense;
     gap: 35px;
 }
 .feedback-card{
     display: flex;
+    /* grid-auto-flow: dense; */
     padding: 40px;
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -438,60 +305,6 @@
     padding: 150px 0px 150px 0px;
     display: flex;
     justify-content: center;
-}
-
-.book-demo-section{
-    height: 520px;
-    width: 1440px;
-    border-radius: 40px;
-    background-color: #003FDB;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.book-demo-details{
-    padding: 80px 80px;
-}
-
-.demo-details-title{
-    font-family: Inter;
-    font-size: 65px;
-    font-weight: 700;
-    line-height: 80px;
-    text-align: left;
-    color: #FFFFFF;    
-}
-
-.book-demo-image{
-    padding: 20px;
-    height: 480px;
-    border-radius: 40px;
-}
-
-.demo-buttons-section{
-    display: flex;
-    gap:20px;
-    padding-top: 40px;
-}
-
-.request-demo-button{
-    padding: 18px 55px;
-    background-color: #A3DC2F;
-    border-radius: 100px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 21.78px;    
-}
-
-.watch-video-button{
-    padding: 18px 55px;
-    background-color: #FFFFFF;
-    border-radius: 100px;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 21.78px;    
 }
 
 .footer{

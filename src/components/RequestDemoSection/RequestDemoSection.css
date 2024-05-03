@@ -1,0 +1,53 @@
+.book-demo-section{
+    height: 520px;
+    width: 1440px;
+    border-radius: 40px;
+    background-color: #003FDB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-demo-details{
+    padding: 80px 80px;
+}
+
+.demo-details-title{
+    font-family: Inter;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+    color: #FFFFFF;    
+}
+
+.book-demo-image{
+    padding: 20px;
+    height: 480px;
+    border-radius: 40px;
+}
+
+.demo-buttons-section{
+    display: flex;
+    gap:20px;
+    padding-top: 40px;
+}
+
+.request-demo-button{
+    padding: 18px 55px;
+    background-color: #A3DC2F;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;    
+}
+
+.watch-video-button{
+    padding: 18px 55px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;    
+}
