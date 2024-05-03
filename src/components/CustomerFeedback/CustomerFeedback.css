@@ -1,0 +1,56 @@
+.customer-feedback-section{
+    padding: 100px 140px
+}
+
+.feedback-data{
+    padding-top: 55px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    grid-auto-flow: dense;
+    gap: 35px;
+}
+.feedback-card{
+    display: flex;
+    /* grid-auto-flow: dense; */
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.feedback-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback-message{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #707070;    
+}
+
+.customer-info{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customer-header-title{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 87.14px;
+    letter-spacing: -0.025em;
+    text-align: center;    
+}
+
+.customer-header-subtext{
+    padding-top: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;    
+}

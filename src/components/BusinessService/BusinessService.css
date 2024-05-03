@@ -40,3 +40,11 @@
     line-height: 36px;
     text-align: left;
 }
+
+.explore-more-button{
+    width: 100px;
+    margin-top: 35px;
+    padding: 20px 40px;
+    background-color: #A3DC2F;
+    border-radius: 100px
+}

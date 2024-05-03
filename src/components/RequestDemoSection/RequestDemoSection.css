@@ -51,3 +51,10 @@
     font-weight: 600;
     line-height: 21.78px;    
 }
+
+.request-demo-section{
+    background-color: #FFFFFF;
+    padding: 150px 0px 150px 0px;
+    display: flex;
+    justify-content: center;
+}

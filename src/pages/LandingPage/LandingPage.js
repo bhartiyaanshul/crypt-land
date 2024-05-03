@@ -14,80 +14,14 @@ import partner6 from './Partnerslogo/Component 57.png'
 
 
 import socialicon from './footer/social iocn.png'
-import rating from './feedback/Component 29.png'
-import avatar from './feedback/Pic.png'
+
 import { FoundersSection } from '../../components/FoundersSection/FoundersSection'
 import { RequestDemoSection } from '../../components/RequestDemoSection/RequestDemoSection'
 import { Navbar } from '../../components/Navbar/Navbar'
+import { PlansSection } from '../../components/PlansSection/PlansSection'
+import { CustomerFeedback } from '../../components/CustomerFeedback/CustomerFeedback'
 
 export const LandingPage = () => {
-
-    const [plans, setPlans] = useState([
-        {
-            type: 'Basic',
-            price: 0,
-            description: 'Get a professional website designed according to your needs.',
-            features: [
-                'Get a fully designed Website.',
-                'Webflow Development',
-                'Limited Support'
-            ]
-        },
-        {
-            type: 'Pro',
-            price: 499,
-            description: 'Get a professional website designed according to your needs.',
-            features: [
-                'Get a fully designed Website.',
-                'Webflow Development',
-                'Limited Support',
-                'Get a fully designed Website',
-                'Webflow Development',
-                '24/7 Support system'
-            ]
-        },
-        {
-            type: 'Enterprise',
-            price: 999,
-            description: 'Get a professional website designed according to your needs.',
-            features: [
-                'Get a fully designed Website.',
-                'Webflow Development',
-                'Limited Support',
-                'Get a fully designed Website',
-                'Get a fully designed Website',
-                'Webflow Development',
-                '24/7 Support system'
-            ]
-        }
-    ])
-
-    const [feedback, setFeedback] = useState([
-        {
-            messege: "Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable.",
-            name: 'Ashley Cooper',
-        },
-        {
-            messege: "Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. ",
-            name: 'Ashley Cooper',
-        },
-        {
-            messege: "Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable.",
-            name: 'Ashley Cooper',
-        },
-        {
-            messege: "Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used",
-            name: 'Ashley Cooper',
-        },
-        {
-            messege: "Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable.Teamollo delivered the site with inthe timeline as they requested. Inthe end ",
-            name: 'Ashley Cooper',
-        },
-        {
-            messege: "Teamollo delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn`t used, which have also proved to be easy to use and reliable.",
-            name: 'Ashley Cooper',
-        },
-    ])
 
     return (
         <div className='crypt-land-application'>
@@ -128,66 +62,11 @@ export const LandingPage = () => {
                 <img className='partners-img' src={partner5} alt='' />
                 <img className='partners-img' src={partner6} alt='' />
             </div>
+
             <BusinessService />
             <FoundersSection />
-
-            <div className='plans-section'>
-                <div className='plan-section-details'>
-                    <div className='plan-details-title'>Find the right plan</div>
-                    <div className='plan-details-text'>
-                        "Invest in your company's future with our comprehensive financial solution. Contact us for pricing details <br />
-                        and see how we can help you streamline your finances and reach your business goals.
-                    </div>
-                </div>
-                <div className='plans-data'>
-                    {
-                        plans.map((value, index) => {
-                            return <div key={index} className='plan-card'>
-                                <div className='plan-details'>
-                                    <div style={{ color: index===0 ? "black" : "#A3DC2F" }}className='plan-type'>{value.type}</div>
-                                    <div className='plan-price'>${value.price}</div>
-                                    <div className='plan-description'>{value.description}</div>
-                                    {value.features.map((e) =>
-                                        <p className='plan-feature'>{e}</p>
-                                    )}
-                                </div>
-                                <button style={{ background: index===2 ? "#A3DC2F" : "white" }} className='select-plan-button'>Select Plan</button>
-                            </div>
-                        })
-                    }
-                </div>
-            </div>
-
-            
-            <div className='customer-feedback-section'>
-                <div className='customer-feedback-header'>
-                    <div className='customer-header-title'>What our customers say</div>
-                    <div className='customer-header-subtext'>
-                        "Thank you for your trust in Crypt Land!
-                        We are grateful for your feedback and are committed to providing the<br />best [products/services offered].
-                        Read what our clients have to say about their experience with us.
-                    </div>
-                </div>
-                <div className='feedback-data'>
-                    {
-                        feedback.map((feedback, index) => {
-                            return <div key={index} className='feedback-card'>
-                                <div className='feedback-details'>
-                                    <div className='feedback-message'>{feedback.messege}</div>
-                                    <div className='customer-info'>
-                                        <img src={avatar} alt=''></img>
-                                        <div>
-                                            <div className='feedback-name'>{feedback.name}</div>
-                                            <img src={rating} alt=''></img>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        })
-                    }
-                </div>
-            </div>
-
+            <PlansSection />
+            <CustomerFeedback />
             <RequestDemoSection />
 
             <div className='footer'>
