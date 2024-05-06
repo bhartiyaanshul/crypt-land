@@ -1,5 +1,5 @@
 import React from 'react'
-import './LandingPage.css'
+import './CryptLand.css'
 import { BusinessService } from '../../components/BusinessService/BusinessService'
 import { FoundersSection } from '../../components/FoundersSection/FoundersSection'
 import { RequestDemoSection } from '../../components/RequestDemoSection/RequestDemoSection'
@@ -9,7 +9,7 @@ import { CustomerFeedback } from '../../components/CustomerFeedback/CustomerFeed
 import { Footer } from '../../components/Footer/Footer'
 import { IntroSection } from '../../components/IntroSection/IntroSection'
 
-export const LandingPage = () => {
+export const CryptLand = () => {
 
     return (
         <div className='crypt-land-application'>

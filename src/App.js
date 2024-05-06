@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import { LandingPage } from './pages/LandingPage/LandingPage';
+import { CryptLand } from './pages/CryptLand/CryptLand';
+import { Newsify } from './pages/Newsify/Newsify';
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<LandingPage/>} ></Route>
+        <Route path='/' element={<CryptLand/>}/>
+        <Route path='/newsify' element={<Newsify/>}/>
       </Routes>
     </div>
   );
