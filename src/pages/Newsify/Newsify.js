@@ -4,6 +4,7 @@ import { Navbar } from '../../components/Newsify/Navbar/Navbar'
 import { IntroSection } from '../../components/Newsify/IntroSection/IntroSection'
 import { Features } from '../../components/Newsify/Features/Features'
 import { ServicesSection } from '../../components/Newsify/ServicesSection/ServicesSection'
+import { Footer } from '../../components/Newsify/Footer/Footer'
 
 export const Newsify = () => {
   return (
@@ -13,6 +14,7 @@ export const Newsify = () => {
         <IntroSection/>
         <Features/>
         <ServicesSection />
+        <Footer />
     </div>
   )
 }
