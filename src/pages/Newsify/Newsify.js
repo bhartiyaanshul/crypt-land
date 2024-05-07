@@ -5,6 +5,7 @@ import { IntroSection } from '../../components/Newsify/IntroSection/IntroSection
 import { Features } from '../../components/Newsify/Features/Features'
 import { ServicesSection } from '../../components/Newsify/ServicesSection/ServicesSection'
 import { Footer } from '../../components/Newsify/Footer/Footer'
+import { LetsStartSection } from '../../components/Newsify/LetsStartSection/LetsStartSection'
 
 export const Newsify = () => {
   return (
@@ -14,6 +15,7 @@ export const Newsify = () => {
         <IntroSection/>
         <Features/>
         <ServicesSection />
+        <LetsStartSection/>
         <Footer />
     </div>
   )
