@@ -10,11 +10,12 @@
 }
 
 .features-content-title{
+    font-family: Inter;
     font-size: 56px;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: -0.02em;
-    text-align: center;    
+    text-align: center;
 }
 
 .features-content-subtext{
@@ -48,11 +49,16 @@
 .arror-circle{
     width: 40px;
     border-radius: 200px;
+    background-color: #F7F7F7;
     border: 6px solid white;
     padding: 20px;
     position: absolute;
-    /* margin-bottom: 20px; */
-    /* z-index: -1; */
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    place-items: center;
+    z-index: 0;
     align-content: center;
 }
 

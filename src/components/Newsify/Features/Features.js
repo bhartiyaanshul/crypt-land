@@ -35,18 +35,20 @@ export const Features = () => {
                 {
                     feature.map((value, index) => {
                         return (
-                            <div key={index} className='feature' style={{
+                            <div key={index} className='feature ' style={{
                                 'background-color': index === 1 ? '#1668E8' : '#F7F7F7',
-                                'color': index===1 ? '#FFFFFF' : '#000000'
+                                'color': index === 1 ? '#FFFFFF' : '#000000'
                             }}>
-                                {/* <div className='arror-circle'>
+                                <div className='arror-circle' style={{
+                                    'background-color': index === 1 ? '#1668E8' : '#F7F7F7'
+                                }}>
                                     {
                                         index === 1 ?
-                                        <img src={arrowwhite} alt=''></img> :
-                                        <img src={arrowblack} alt=''></img>
+                                            <img src={arrowwhite} alt=''></img> :
+                                            <img src={arrowblack} alt=''></img>
                                     }
-                                    
-                                </div> */}
+
+                                </div>
                                 <div className='feature-title'>{value.title}</div>
                                 <div className='feature-desc'>{value.desc}</div>
                             </div>
