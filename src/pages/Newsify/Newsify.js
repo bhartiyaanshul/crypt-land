@@ -7,18 +7,23 @@ import { ServicesSection } from '../../components/Newsify/ServicesSection/Servic
 import { Footer } from '../../components/Newsify/Footer/Footer'
 import { LetsStartSection } from '../../components/Newsify/LetsStartSection/LetsStartSection'
 import { Feedback } from '../../components/Newsify/Feedback/Feedback'
+import Accordion from '../../components/Newsify/Accordion/Accordion'
 
 export const Newsify = () => {
+
+
+
   return (
     <div>
-        <Header />
-        <Navbar />
-        <IntroSection/>
-        <Features/>
-        <ServicesSection />
-        <Feedback />
-        <LetsStartSection/>
-        <Footer />
+      <Header />
+      <Navbar />
+      <IntroSection />
+      <Features />
+      <ServicesSection />
+      <Feedback />
+      <Accordion/>
+      <LetsStartSection  />
+      <Footer />
     </div>
   )
 }

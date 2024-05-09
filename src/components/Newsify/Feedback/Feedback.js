@@ -1,5 +1,4 @@
 import React from 'react'
-import carose from './carose.png'
 import './Feedback.css' 
 import { Carose } from '../Carose/Carose'
 import waves from './Component 1.png'
@@ -15,7 +14,7 @@ export const Feedback = () => {
                 <div className='feedback-details-title'>The <span style={{'color':'#1668E8'}}>Cutomer is Hero</span> of Our Business</div>
                 <div className='feedback-details-subtext'>Newsify is your Email newsletter Webflow template we can build anything your dream.</div>
             </div>
-            <Carose/>
+            <Carose />
         </div>
         <div className='customer-feedbacks'>
             <img src={waves} className='waves' />
