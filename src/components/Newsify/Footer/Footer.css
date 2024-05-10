@@ -78,6 +78,7 @@
     line-height: 36px;
     text-align: left;
     text-wrap: nowrap;
+    cursor: pointer;
 }
 
 .footer-details-subtext{
@@ -87,6 +88,7 @@
     letter-spacing: 0.025em;
     text-align: left;
     text-wrap: wrap;
+    cursor: pointer;
 }
 
 .footer-details-subtext:nth-child(5){

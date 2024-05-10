@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css'
+import icon from './social icon.png'
+
 export const Footer = () => {
   return (
     <div className='footer-section'>
@@ -35,6 +37,7 @@ export const Footer = () => {
                 <div className='footer-details-subtext'>Riverside 25, San Francisco, California View on Maps</div>
                 <div className='footer-details-subtext'>Inquiries</div>
                 <div className='footer-details-subtext'>+65 6156 5519 hello@Newsify.com</div>
+                <img src={icon} alt='' />
             </div>
         </div>
         <div className='footer-section-bottom'>

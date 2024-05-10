@@ -2,10 +2,6 @@ import { useState } from "react";
 import './Accordion.css';
 import { Vector } from "./Vector.js";
 
-
-// import pulse, { Vector } from './Vector.js'
-// import dropdown from './Vector (1).png'
-
 const accordionData = [
     {
       title: "What is Team Newsify?",
