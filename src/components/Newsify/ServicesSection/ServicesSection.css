@@ -21,17 +21,24 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 120px;
     margin-top: 70px;
+    
 }
 
 .service{
     display: flex;
     flex-direction: column;
-    gap: 90px
+    gap: 90px;
+    transition: transform 0.2s ease;
+}
+
+.service:hover{
+    transform: scale(1.1);
 }
 
 .service-img{
     height: 520px;
     width: 600px;
+    
 }
 
 .service-content{

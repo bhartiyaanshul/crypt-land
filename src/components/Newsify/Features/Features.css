@@ -44,6 +44,11 @@
     gap: 25px;
     background-color: #F7F7F7;
     position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover{
+    transform: scale(1.1);
 }
 
 .arror-circle{
